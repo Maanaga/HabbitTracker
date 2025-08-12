@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		E4580CC72E4BC41C004009FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4580CB12E4BC41B004009FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4580CB82E4BC41B004009FB;
+			remoteInfo = HabbitTracker;
+		};
+		E4580CD12E4BC41C004009FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4580CB12E4BC41B004009FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4580CB82E4BC41B004009FB;
+			remoteInfo = HabbitTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4580CB92E4BC41B004009FB /* HabbitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabbitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4580CC62E4BC41C004009FB /* HabbitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4580CD02E4BC41C004009FB /* HabbitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E4580CBB2E4BC41B004009FB /* HabbitTracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HabbitTracker;
+			sourceTree = "<group>";
+		};
+		E4580CC92E4BC41C004009FB /* HabbitTrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HabbitTrackerTests;
+			sourceTree = "<group>";
+		};
+		E4580CD32E4BC41C004009FB /* HabbitTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HabbitTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4580CB62E4BC41B004009FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CC32E4BC41C004009FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CCD2E4BC41C004009FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4580CB02E4BC41B004009FB = {
+			isa = PBXGroup;
+			children = (
+				E4580CBB2E4BC41B004009FB /* HabbitTracker */,
+				E4580CC92E4BC41C004009FB /* HabbitTrackerTests */,
+				E4580CD32E4BC41C004009FB /* HabbitTrackerUITests */,
+				E4580CBA2E4BC41B004009FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4580CBA2E4BC41B004009FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4580CB92E4BC41B004009FB /* HabbitTracker.app */,
+				E4580CC62E4BC41C004009FB /* HabbitTrackerTests.xctest */,
+				E4580CD02E4BC41C004009FB /* HabbitTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4580CB82E4BC41B004009FB /* HabbitTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4580CDA2E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTracker" */;
+			buildPhases = (
+				E4580CB52E4BC41B004009FB /* Sources */,
+				E4580CB62E4BC41B004009FB /* Frameworks */,
+				E4580CB72E4BC41B004009FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E4580CBB2E4BC41B004009FB /* HabbitTracker */,
+			);
+			name = HabbitTracker;
+			packageProductDependencies = (
+			);
+			productName = HabbitTracker;
+			productReference = E4580CB92E4BC41B004009FB /* HabbitTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4580CC52E4BC41C004009FB /* HabbitTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4580CDD2E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTrackerTests" */;
+			buildPhases = (
+				E4580CC22E4BC41C004009FB /* Sources */,
+				E4580CC32E4BC41C004009FB /* Frameworks */,
+				E4580CC42E4BC41C004009FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4580CC82E4BC41C004009FB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E4580CC92E4BC41C004009FB /* HabbitTrackerTests */,
+			);
+			name = HabbitTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = HabbitTrackerTests;
+			productReference = E4580CC62E4BC41C004009FB /* HabbitTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4580CCF2E4BC41C004009FB /* HabbitTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4580CE02E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTrackerUITests" */;
+			buildPhases = (
+				E4580CCC2E4BC41C004009FB /* Sources */,
+				E4580CCD2E4BC41C004009FB /* Frameworks */,
+				E4580CCE2E4BC41C004009FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4580CD22E4BC41C004009FB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E4580CD32E4BC41C004009FB /* HabbitTrackerUITests */,
+			);
+			name = HabbitTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = HabbitTrackerUITests;
+			productReference = E4580CD02E4BC41C004009FB /* HabbitTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4580CB12E4BC41B004009FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E4580CB82E4BC41B004009FB = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E4580CC52E4BC41C004009FB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E4580CB82E4BC41B004009FB;
+					};
+					E4580CCF2E4BC41C004009FB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E4580CB82E4BC41B004009FB;
+					};
+				};
+			};
+			buildConfigurationList = E4580CB42E4BC41B004009FB /* Build configuration list for PBXProject "HabbitTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4580CB02E4BC41B004009FB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E4580CBA2E4BC41B004009FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4580CB82E4BC41B004009FB /* HabbitTracker */,
+				E4580CC52E4BC41C004009FB /* HabbitTrackerTests */,
+				E4580CCF2E4BC41C004009FB /* HabbitTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4580CB72E4BC41B004009FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CC42E4BC41C004009FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CCE2E4BC41C004009FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4580CB52E4BC41B004009FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CC22E4BC41C004009FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4580CCC2E4BC41C004009FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4580CC82E4BC41C004009FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4580CB82E4BC41B004009FB /* HabbitTracker */;
+			targetProxy = E4580CC72E4BC41C004009FB /* PBXContainerItemProxy */;
+		};
+		E4580CD22E4BC41C004009FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4580CB82E4BC41B004009FB /* HabbitTracker */;
+			targetProxy = E4580CD12E4BC41C004009FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4580CD82E4BC41C004009FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4580CD92E4BC41C004009FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4580CDB2E4BC41C004009FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4580CDC2E4BC41C004009FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4580CDE2E4BC41C004009FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabbitTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabbitTracker";
+			};
+			name = Debug;
+		};
+		E4580CDF2E4BC41C004009FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabbitTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabbitTracker";
+			};
+			name = Release;
+		};
+		E4580CE12E4BC41C004009FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HabbitTracker;
+			};
+			name = Debug;
+		};
+		E4580CE22E4BC41C004009FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HabbitTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4580CB42E4BC41B004009FB /* Build configuration list for PBXProject "HabbitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4580CD82E4BC41C004009FB /* Debug */,
+				E4580CD92E4BC41C004009FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4580CDA2E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4580CDB2E4BC41C004009FB /* Debug */,
+				E4580CDC2E4BC41C004009FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4580CDD2E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4580CDE2E4BC41C004009FB /* Debug */,
+				E4580CDF2E4BC41C004009FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4580CE02E4BC41C004009FB /* Build configuration list for PBXNativeTarget "HabbitTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4580CE12E4BC41C004009FB /* Debug */,
+				E4580CE22E4BC41C004009FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4580CB12E4BC41B004009FB /* Project object */;
+}
