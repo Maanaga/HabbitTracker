@@ -7,19 +7,19 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 10) {
-                Text("Lets Track Your Habbits :)")
+                Text("Lets Track Your Habits :)")
                     .font(.subheadline)
                     .foregroundStyle(.gray)
-                    .padding(.top, -10)
                     .frame(maxWidth: .infinity, alignment: .leading)
-            }
-                VStack {
-                    ShowHabbits()
-                }
+                    .padding(.horizontal)
+                
+                
+                ShowHabbits()
+                
                 WeeklyActive()
                 
                 Spacer()
-                    .padding(.vertical, -40)
+            }
                 
             
         

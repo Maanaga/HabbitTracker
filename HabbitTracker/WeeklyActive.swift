@@ -5,7 +5,7 @@ struct WeeklyActive: View {
     var body: some View {
         VStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 15)
                 .fill(
                     LinearGradient(
                         gradient: Gradient(colors: [
@@ -16,10 +16,9 @@ struct WeeklyActive: View {
                         endPoint: .bottomTrailing
                     )
                 )
-                .frame(width: 350, height: 100)
-                    
-                        .overlay(
-                            VStack(alignment: .leading, spacing: 10) {
+                .frame(height: 120)
+
+                            VStack(alignment: .leading, spacing: 15) {
                                 Text("Weekly Active Days")
                                     .font(.headline)
                                     .foregroundColor(.white)
@@ -27,21 +26,21 @@ struct WeeklyActive: View {
                                     ForEach(1..<8, id: \.self) { number in
                                         ZStack {
                                             Circle()
-                                                .fill(number == 1 ? Color.green : Color.white.opacity(0.2))
+                                                .fill(number == 1 ? Color.white : Color.white.opacity(0.3))
                                                 .frame(width: 40, height: 40)
                                             
                                             Text("\(number)")
-                                                .foregroundStyle(.white)
+                                                .foregroundStyle(number == 1 ? .green : .white)
                                                 .font(.headline)
                                         }
                                     }
                                     Spacer()
                                 }
                             }
-                                .padding(.leading, 20)
-                        )
+                                .padding()
+                        
             }
-            .padding(.bottom, 420)
+            .padding(.horizontal)
         }
         
     }
