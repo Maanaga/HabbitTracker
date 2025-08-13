@@ -69,6 +69,7 @@ struct ShowHabbits: View {
                                 .foregroundStyle(.white)
                                 .font(.title)
                                 .fontWeight(.semibold)
+                                
                             
                             Text("Gain You Happiness And Piece")
                                 .foregroundStyle(.white)

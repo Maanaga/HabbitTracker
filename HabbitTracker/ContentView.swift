@@ -4,9 +4,10 @@ let rows = [
     GridItem(.adaptive(minimum: 200))
     ]
 struct ContentView: View {
+    @State private var darkMode = false
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 20) {
                 Text("Lets Track Your Habits :)")
                     .font(.subheadline)
                     .foregroundStyle(.gray)
@@ -15,15 +16,23 @@ struct ContentView: View {
                 
                 
                 ShowHabbits()
-                
+              
                 WeeklyActive()
-                
+          
                 Spacer()
             }
-                
-            
-        
             .navigationTitle("Hello, Luka!")
+            .preferredColorScheme(darkMode ? .dark : .light)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        darkMode.toggle()
+                    }) {
+                        Image(systemName: darkMode ? "sun.max" : "moon")
+                            .foregroundColor(darkMode ? .white : .black)
+                    }
+                }
+            }
         }
     }
 }
