@@ -27,7 +27,7 @@ struct WeeklyActive: View {
                                     ForEach(1..<8, id: \.self) { number in
                                         ZStack {
                                             Circle()
-                                                .fill(number == 1 ? Color.green.opacity(0.9) : Color.white.opacity(0.2))
+                                                .fill(number == 1 ? Color.green : Color.white.opacity(0.2))
                                                 .frame(width: 40, height: 40)
                                             
                                             Text("\(number)")
