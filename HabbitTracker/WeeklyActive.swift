@@ -1,5 +1,4 @@
 
-
 import SwiftUI
 
 struct WeeklyActive: View {
@@ -21,14 +20,14 @@ struct WeeklyActive: View {
                     
                         .overlay(
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("Weekly Activities")
+                                Text("Weekly Active Days")
                                     .font(.headline)
                                     .foregroundColor(.white)
                                 HStack(spacing: 8) {
                                     ForEach(1..<8, id: \.self) { number in
                                         ZStack {
                                             Circle()
-                                                .fill(.white.opacity(0.3))
+                                                .fill(number == 1 ? Color.green.opacity(0.9) : Color.white.opacity(0.2))
                                                 .frame(width: 40, height: 40)
                                             
                                             Text("\(number)")
