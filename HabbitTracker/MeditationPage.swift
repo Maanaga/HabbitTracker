@@ -7,7 +7,11 @@ struct MeditationPage: View {
         ScrollView {
             Spacer()
             Spacer()
-            VStack {
+            VStack(alignment: .leading) {
+                Text("Meditation")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .fill(

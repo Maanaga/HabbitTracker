@@ -5,6 +5,7 @@ import SwiftUI
 struct ShowHabbits: View {
     @State private var showingSheet = false
     @State private var selectedPage: Int? = nil
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 15) {
@@ -84,10 +85,7 @@ struct ShowHabbits: View {
                             Text("Relax And Fresh Your Mind")
                                 .foregroundStyle(.white)
                                 .font(.subheadline)
-                            
                         }
-               
-                        
                         .padding()
                     }
                     .onTapGesture {
@@ -95,23 +93,38 @@ struct ShowHabbits: View {
                         showingSheet = true
                     }
                 }
-            
             }
             .padding(.horizontal)
             .sheet(isPresented: $showingSheet) {
-                if selectedPage == 1 {
-                    MeditationPage()
-                }
-                else if selectedPage == 2 {
-                    EducationPage()
-                }
-                else {
-                    TravelPage()
+                ZStack(alignment: .topLeading) {
+                    Color(.systemBackground)
+                        .ignoresSafeArea()
+                    Group {
+                        if selectedPage == 1 {
+                            MeditationPage()
+                        }
+                        else if selectedPage == 2 {
+                            EducationPage()
+                        }
+                        else {
+                            TravelPage()
+                        }
+                    }
+                    .padding(.top, 50)
+                    
+                    
+                    Button(role: .cancel) {
+                        showingSheet.toggle()
+                    } label: {
+                        Image(systemName: "arrow.left")
+                            .font(.title)
+                            .foregroundStyle(.green)
+                            .padding()
+                    }
                 }
             }
         }
     }
-    
 }
 
 #Preview {
