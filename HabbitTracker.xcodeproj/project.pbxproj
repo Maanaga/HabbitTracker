@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E4580CB92E4BC41B004009FB /* HabbitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabbitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4580CB92E4BC41B004009FB /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4580CC62E4BC41C004009FB /* HabbitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4580CD02E4BC41C004009FB /* HabbitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabbitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,7 +85,7 @@
 		E4580CBA2E4BC41B004009FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4580CB92E4BC41B004009FB /* HabbitTracker.app */,
+				E4580CB92E4BC41B004009FB /* HabitTracker.app */,
 				E4580CC62E4BC41C004009FB /* HabbitTrackerTests.xctest */,
 				E4580CD02E4BC41C004009FB /* HabbitTrackerUITests.xctest */,
 			);
@@ -114,7 +114,7 @@
 			packageProductDependencies = (
 			);
 			productName = HabbitTracker;
-			productReference = E4580CB92E4BC41B004009FB /* HabbitTracker.app */;
+			productReference = E4580CB92E4BC41B004009FB /* HabitTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E4580CC52E4BC41C004009FB /* HabbitTrackerTests */ = {
@@ -407,8 +407,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabitTracker;
+				PRODUCT_NAME = HabitTracker;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,8 +434,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabbitTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.managadze.luka.HabitTracker;
+				PRODUCT_NAME = HabitTracker;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

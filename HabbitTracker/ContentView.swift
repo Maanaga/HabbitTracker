@@ -5,6 +5,7 @@ let rows = [
     ]
 struct ContentView: View {
     @State private var darkMode = false
+    @State private var showingSheet = false
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
@@ -13,12 +14,12 @@ struct ContentView: View {
                     .foregroundStyle(.gray)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal)
-                
-                
+
+
                 ShowHabbits()
-              
+
                 WeeklyActive()
-          
+
                 Spacer()
             }
             .navigationTitle("Hello, Luka!")
@@ -37,8 +38,7 @@ struct ContentView: View {
     }
 }
 
-    
+
     #Preview {
         ContentView()
     }
-

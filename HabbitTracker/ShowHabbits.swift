@@ -3,6 +3,8 @@
 import SwiftUI
 
 struct ShowHabbits: View {
+    @State private var showingSheet = false
+    @State private var selectedPage: Int? = nil
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 15) {
@@ -31,6 +33,10 @@ struct ShowHabbits: View {
                         }
                         .padding()
                     }
+                    .onTapGesture {
+                        selectedPage = 1
+                        showingSheet = true
+                    }
                 }
                 VStack {
                     ZStack(alignment: .bottomLeading) {
@@ -55,6 +61,10 @@ struct ShowHabbits: View {
                         }
                         .padding()
                     }
+                    .onTapGesture {
+                        selectedPage = 2
+                        showingSheet = true
+                    }
                 }
                 VStack {
                     ZStack(alignment: .bottomLeading) {
@@ -71,19 +81,37 @@ struct ShowHabbits: View {
                                 .fontWeight(.semibold)
                                 
                             
-                            Text("Gain You Happiness And Piece")
+                            Text("Relax And Fresh Your Mind")
                                 .foregroundStyle(.white)
                                 .font(.subheadline)
                             
                         }
+               
                         
                         .padding()
                     }
+                    .onTapGesture {
+                        selectedPage = 3
+                        showingSheet = true
+                    }
                 }
+            
             }
             .padding(.horizontal)
+            .sheet(isPresented: $showingSheet) {
+                if selectedPage == 1 {
+                    MeditationPage()
+                }
+                else if selectedPage == 2 {
+                    EducationPage()
+                }
+                else {
+                    TravelPage()
+                }
+            }
         }
     }
+    
 }
 
 #Preview {
