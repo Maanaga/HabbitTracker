@@ -1,160 +1,152 @@
 {
-  "meditation_course": {
-    "beginner": [
-      {
-        "step": 1,
-        "title": "Find Your Seat",
-        "description": "Learn how to sit comfortably (chair, cushion, or floor)."
-      },
-      {
-        "step": 2,
-        "title": "Gentle Breathing",
-        "description": "Focus on slow inhales & exhales (2–5 minutes)."
-      },
-      {
-        "step": 3,
-        "title": "Body Awareness",
-        "description": "Scan your body from head to toe, release tension."
-      },
-      {
-        "step": 4,
-        "title": "Counting the Breath",
-        "description": "Count from 1 to 10 with each inhale/exhale cycle."
-      },
-      {
-        "step": 5,
-        "title": "Anchor to the Present",
-        "description": "Notice when your mind wanders, return to breath."
-      },
-      {
-        "step": 6,
-        "title": "Guided Relaxation",
-        "description": "Use short guided meditations to stay focused."
-      },
-      {
-        "step": 7,
-        "title": "Daily Routine",
-        "description": "Commit to 5–10 minutes daily practice."
-      },
-      {
-        "step": 8,
-        "title": "Noticing Thoughts",
-        "description": "Watch thoughts without judgment, like clouds passing."
-      },
-      {
-        "step": 9,
-        "title": "Gratitude Moment",
-        "description": "End meditation by reflecting on one thing you’re grateful for."
-      },
-      {
-        "step": 10,
-        "title": "Build Consistency",
-        "description": "Practice daily for at least 2 weeks before moving on."
-      }
-    ],
-    "intermediate": [
-      {
-        "step": 1,
-        "title": "Posture Refinement",
-        "description": "Sit with alert yet relaxed spine."
-      },
-      {
-        "step": 2,
-        "title": "Extended Breath",
-        "description": "Lengthen sessions to 10–15 minutes."
-      },
-      {
-        "step": 3,
-        "title": "Labeling Thoughts",
-        "description": "Notice and name thoughts like 'thinking', 'planning', 'remembering', then return to breath."
-      },
-      {
-        "step": 4,
-        "title": "Open Awareness",
-        "description": "Notice sounds, sensations, and surroundings without reacting."
-      },
-      {
-        "step": 5,
-        "title": "Loving-Kindness",
-        "description": "Send kindness first to yourself, then to others."
-      },
-      {
-        "step": 6,
-        "title": "Visualization",
-        "description": "Picture calming imagery (forest, ocean, candle flame)."
-      },
-      {
-        "step": 7,
-        "title": "Walking Meditation",
-        "description": "Sync slow walking with breath awareness."
-      },
-      {
-        "step": 8,
-        "title": "Emotional Awareness",
-        "description": "Observe emotions as sensations in body, not identity."
-      },
-      {
-        "step": 9,
-        "title": "Mindful Pauses",
-        "description": "Practice short meditations during daily activities."
-      },
-      {
-        "step": 10,
-        "title": "21-Day Routine",
-        "description": "Practice 15–20 minutes daily with variety (breath, body, loving-kindness)."
-      }
-    ],
-    "advanced": [
-      {
-        "step": 1,
-        "title": "Longer Sessions",
-        "description": "Practice 20–30 minutes daily, increasing gradually."
-      },
-      {
-        "step": 2,
-        "title": "Breathless Awareness",
-        "description": "Let go of controlling breath, observe naturally."
-      },
-      {
-        "step": 3,
-        "title": "Choiceless Awareness",
-        "description": "Open attention to everything without preference."
-      },
-      {
-        "step": 4,
-        "title": "Deep Body Scan",
-        "description": "Explore micro-sensations like tingling, warmth, vibration."
-      },
-      {
-        "step": 5,
-        "title": "Mantra Meditation",
-        "description": "Repeat a sacred word/sound (e.g., 'Om') to deepen focus."
-      },
-      {
-        "step": 6,
-        "title": "Silence Practice",
-        "description": "Meditate without guidance, no music, just awareness."
-      },
-      {
-        "step": 7,
-        "title": "Shadow Work",
-        "description": "Notice and accept difficult emotions or inner resistance."
-      },
-      {
-        "step": 8,
-        "title": "Compassion Practice",
-        "description": "Extend empathy even toward those who challenge you."
-      },
-      {
-        "step": 9,
-        "title": "Non-Dual Awareness",
-        "description": "Explore the sense of 'observer' dissolving into experience."
-      },
-      {
-        "step": 10,
-        "title": "Retreat Practice",
-        "description": "Try extended meditation (half-day, full-day, or weekend retreat)."
-      }
-    ]
+  "1": {
+    "step": "1",
+    "title": "Find Your Seat",
+    "description": "Learn how to sit comfortably (chair, cushion, or floor)."
+  },
+  "2": {
+    "step": "2",
+    "title": "Gentle Breathing",
+    "description": "Focus on slow inhales & exhales (2–5 minutes)."
+  },
+  "3": {
+    "step": "3",
+    "title": "Body Awareness",
+    "description": "Scan your body from head to toe, release tension."
+  },
+  "4": {
+    "step": "4",
+    "title": "Counting the Breath",
+    "description": "Count from 1 to 10 with each inhale/exhale cycle."
+  },
+  "5": {
+    "step": "5",
+    "title": "Anchor to the Present",
+    "description": "Notice when your mind wanders, return to breath."
+  },
+  "6": {
+    "step": "6",
+    "title": "Guided Relaxation",
+    "description": "Use short guided meditations to stay focused."
+  },
+  "7": {
+    "step": "7",
+    "title": "Daily Routine",
+    "description": "Commit to 5–10 minutes daily practice."
+  },
+  "8": {
+    "step": "8",
+    "title": "Noticing Thoughts",
+    "description": "Watch thoughts without judgment, like clouds passing."
+  },
+  "9": {
+    "step": "9",
+    "title": "Gratitude Moment",
+    "description": "End meditation by reflecting on one thing you're grateful for."
+  },
+  "10": {
+    "step": "10",
+    "title": "Build Consistency",
+    "description": "Practice daily for at least 2 weeks before moving on."
+  },
+  "11": {
+    "step": "11",
+    "title": "Posture Refinement",
+    "description": "Sit with alert yet relaxed spine."
+  },
+  "12": {
+    "step": "12",
+    "title": "Extended Breath",
+    "description": "Lengthen sessions to 10–15 minutes."
+  },
+  "13": {
+    "step": "13",
+    "title": "Labeling Thoughts",
+    "description": "Notice and name thoughts like 'thinking', 'planning', 'remembering', then return to breath."
+  },
+  "14": {
+    "step": "14",
+    "title": "Open Awareness",
+    "description": "Notice sounds, sensations, and surroundings without reacting."
+  },
+  "15": {
+    "step": "15",
+    "title": "Loving-Kindness",
+    "description": "Send kindness first to yourself, then to others."
+  },
+  "16": {
+    "step": "16",
+    "title": "Visualization",
+    "description": "Picture calming imagery (forest, ocean, candle flame)."
+  },
+  "17": {
+    "step": "17",
+    "title": "Walking Meditation",
+    "description": "Sync slow walking with breath awareness."
+  },
+  "18": {
+    "step": "18",
+    "title": "Emotional Awareness",
+    "description": "Observe emotions as sensations in body, not identity."
+  },
+  "19": {
+    "step": "19",
+    "title": "Mindful Pauses",
+    "description": "Practice short meditations during daily activities."
+  },
+  "20": {
+    "step": "20",
+    "title": "21-Day Routine",
+    "description": "Practice 15–20 minutes daily with variety (breath, body, loving-kindness)."
+  },
+  "21": {
+    "step": "21",
+    "title": "Longer Sessions",
+    "description": "Practice 20–30 minutes daily, increasing gradually."
+  },
+  "22": {
+    "step": "22",
+    "title": "Breathless Awareness",
+    "description": "Let go of controlling breath, observe naturally."
+  },
+  "23": {
+    "step": "23",
+    "title": "Choiceless Awareness",
+    "description": "Open attention to everything without preference."
+  },
+  "24": {
+    "step": "24",
+    "title": "Deep Body Scan",
+    "description": "Explore micro-sensations like tingling, warmth, vibration."
+  },
+  "25": {
+    "step": "25",
+    "title": "Mantra Meditation",
+    "description": "Repeat a sacred word/sound (e.g., 'Om') to deepen focus."
+  },
+  "26": {
+    "step": "26",
+    "title": "Silence Practice",
+    "description": "Meditate without guidance, no music, just awareness."
+  },
+  "27": {
+    "step": "27",
+    "title": "Shadow Work",
+    "description": "Notice and accept difficult emotions or inner resistance."
+  },
+  "28": {
+    "step": "28",
+    "title": "Compassion Practice",
+    "description": "Extend empathy even toward those who challenge you."
+  },
+  "29": {
+    "step": "29",
+    "title": "Non-Dual Awareness",
+    "description": "Explore the sense of 'observer' dissolving into experience."
+  },
+  "30": {
+    "step": "30",
+    "title": "Retreat Practice",
+    "description": "Try extended meditation (half-day, full-day, or weekend retreat)."
   }
 }

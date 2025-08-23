@@ -1,18 +1,18 @@
-//
-//  BeginnerPage.swift
-//  HabbitTracker
-//
-//  Created by Luka Managadze on 8/21/25.
-//
-
 import SwiftUI
 
 struct BeginnerPage: View {
+    let meditation: Meditation
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text(meditation.description)
+            }
+        }
+       
     }
 }
 
 #Preview {
-    BeginnerPage()
+    let meditations: [String: Meditation] = Bundle.main.decode("meditation.json")
+    return BeginnerPage(meditation: meditations["1"]!)
 }

@@ -9,9 +9,6 @@ extension Bundle {
             fatalError("Failed to load \(file) from bundle")
         }
         let decoder = JSONDecoder()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEE"
-        decoder.dateDecodingStrategy = .formatted(formatter)
         
         do {
             return try decoder.decode(T.self, from: data)

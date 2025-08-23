@@ -5,7 +5,6 @@ import SwiftUI
 struct MeditationPage: View {
     var body: some View {
         ScrollView {
-
             VStack(alignment: .leading, spacing: 15) {
                 Text("Meditation")
                     .font(.largeTitle)

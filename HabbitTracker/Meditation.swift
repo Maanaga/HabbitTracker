@@ -1,18 +1,10 @@
-//
-//  Meditation.swift
-//  HabbitTracker
-//
-//  Created by Luka Managadze on 8/23/25.
-//
+import Foundation
 
-import SwiftUI
+struct Meditation: Codable, Identifiable, Hashable {
+    var id = UUID()
+    let step: String
+    let title: String
+    let description: String
 
-struct Meditation: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
 }
 
-#Preview {
-    Meditation()
-}
