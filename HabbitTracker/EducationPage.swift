@@ -4,7 +4,7 @@ import SwiftUI
 struct EducationPage: View {
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 15) {
                 Text("Education")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -95,7 +95,6 @@ struct EducationPage: View {
                                 .font(.subheadline)
                                 .fontWeight(.medium)
                         }
-
                         .padding()
                     }
                 }
