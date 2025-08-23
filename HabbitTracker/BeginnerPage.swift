@@ -4,8 +4,15 @@ struct BeginnerPage: View {
     let meditation: Meditation
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Step \(meditation.step)")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                Text(meditation.title)
+                    .font(.title2)
+                    .fontWeight(.medium)
                 Text(meditation.description)
+                    .font(.headline)
             }
         }
        
