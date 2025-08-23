@@ -1,5 +1,23 @@
 import SwiftUI
 
+struct MeditationCourse: Codable {
+    let meditationCourse: Levels
+}
+
+struct Levels: Codable {
+    let beginner: [Step]
+    let intermediate: [Step]
+    let advanced: [Step]
+}
+
+struct Step: Codable, Identifiable {
+    var id = UUID()
+    let step: Int
+    let title: String
+    let description: String
+}
+
+
 let rows = [
     GridItem(.adaptive(minimum: 200))
     ]

@@ -1,8 +1,28 @@
-
 import SwiftUI
 
+
 struct WeeklyActive: View {
-    @State private var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    private var weekDates: [Date] {
+        let calendar = Calendar.current
+        let today = Date()
+        
+        let startOfWeek = calendar.dateInterval(of: .weekOfYear, for: today)!.start
+        
+        return (0..<7).compactMap { calendar.date(byAdding: .day, value: $0, to: startOfWeek)}
+    }
+    
+    private var weekdayFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE"
+        return formatter
+    }
+    
+    private var dayFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d"
+        return formatter
+    }
+    
     var body: some View {
         VStack {
             ZStack {
@@ -24,18 +44,18 @@ struct WeeklyActive: View {
                                     .font(.headline)
                                     .foregroundColor(.white)
                                 HStack(spacing: 8) {
-                                    ForEach(0..<7, id: \.self) { number in
+                                    ForEach(weekDates, id: \.self) { date in
                                         VStack(spacing: 6) {
                                             ZStack {
                                                 Circle()
-                                                    .fill(number == 1 ? Color.white : Color.white.opacity(0.3))
+                                                    .fill(Calendar.current.isDateInToday(date) ? Color.white : Color.white.opacity(0.3))
                                                     .frame(width: 40, height: 40)
                                                 
-                                                Text("\(number + 1)")
-                                                    .foregroundStyle(number == 1 ? .green : .white)
+                                                Text(dayFormatter.string(from: date))
+                                                    .foregroundStyle(Calendar.current.isDateInToday(date) ? .green : .white)
                                                     .font(.headline)
                                             }
-                                            Text(days[number])
+                                            Text(weekdayFormatter.string(from: date))
                                                 .font(.caption)
                                                 .foregroundColor(.secondary)
                                             
