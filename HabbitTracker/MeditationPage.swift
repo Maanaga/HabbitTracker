@@ -4,6 +4,8 @@ import SwiftUI
 
 struct MeditationPage: View {
     let allMeditations: [String: Meditation] = Bundle.main.decode("meditation.json")
+    @State private var showingSheet = false
+    @State private var selectedPage: Int? = nil
     var body: some View {
         NavigationView {
             ScrollView {
@@ -66,7 +68,6 @@ struct MeditationPage: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .brightness(-0.1)
                         
-                        NavigationLink(destination: BeginnerPage(meditations: beginnerMeditations)) {
                             VStack(alignment: .leading, spacing: 5) {
                                 Text("Beginner")
                                     .foregroundStyle(.white)
@@ -78,7 +79,10 @@ struct MeditationPage: View {
                                     .font(.subheadline)
                                     .fontWeight(.medium)
                             }
-                        }
+                            .onTapGesture {
+                                selectedPage = 1
+                                showingSheet = true
+                            }
                         .padding()
                     }
                     .padding(.horizontal, 30)
@@ -113,6 +117,10 @@ struct MeditationPage: View {
                                 .font(.subheadline)
                                 .fontWeight(.medium)
                         }
+                        .onTapGesture {
+                            selectedPage = 2
+                            showingSheet = true
+                        }
                         .padding()
                     }
                     .padding(.horizontal, 30)
@@ -137,8 +145,22 @@ struct MeditationPage: View {
                             .font(.subheadline)
                             .fontWeight(.medium)
                     }
-                    
+                    .onTapGesture {
+                        selectedPage = 3
+                        showingSheet = true
+                    }
                     .padding()
+                }
+                .sheet(isPresented: $showingSheet) {
+                    if selectedPage == 1 {
+                        BeginnerPage(meditations: beginnerMeditations)
+                    }
+                    else if selectedPage == 2 {
+                        IntermediatePage(meditations: intermediateMeditations)
+                    }
+                    else if selectedPage == 3 {
+                        AdvancedPage(meditations: advancedMeditations)
+                    }
                 }
             }
                 .padding(.horizontal, 30)
@@ -147,6 +169,16 @@ struct MeditationPage: View {
     private var beginnerMeditations: [Meditation] {
         (1...10).compactMap { step in
         allMeditations["\(step)"]
+        }
+    }
+    private var intermediateMeditations: [Meditation] {
+        (11...20).compactMap { step in
+            allMeditations["\(step)"]
+        }
+    }
+    private var advancedMeditations: [Meditation] {
+        (21...30).compactMap { step in
+            allMeditations["\(step)"]
         }
     }
 }
