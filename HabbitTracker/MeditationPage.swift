@@ -68,21 +68,21 @@ struct MeditationPage: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .brightness(-0.1)
                         
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text("Beginner")
-                                    .foregroundStyle(.white)
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                
-                                Text("Take your first steps in meditation")
-                                    .foregroundStyle(.white)
-                                    .font(.subheadline)
-                                    .fontWeight(.medium)
-                            }
-                            .onTapGesture {
-                                selectedPage = 1
-                                showingSheet = true
-                            }
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("Beginner")
+                                .foregroundStyle(.white)
+                                .font(.title)
+                                .fontWeight(.semibold)
+                            
+                            Text("Take your first steps in meditation")
+                                .foregroundStyle(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                        }
+                        .onTapGesture {
+                            selectedPage = 1
+                            showingSheet = true
+                        }
                         .padding()
                     }
                     .padding(.horizontal, 30)
@@ -152,14 +152,28 @@ struct MeditationPage: View {
                     .padding()
                 }
                 .sheet(isPresented: $showingSheet) {
-                    if selectedPage == 1 {
-                        BeginnerPage(meditations: beginnerMeditations)
-                    }
-                    else if selectedPage == 2 {
-                        IntermediatePage(meditations: intermediateMeditations)
-                    }
-                    else if selectedPage == 3 {
-                        AdvancedPage(meditations: advancedMeditations)
+                    ZStack(alignment: .topLeading) {
+                        Color(.systemBackground)
+                            .ignoresSafeArea()
+                        Group {
+                            if selectedPage == 1 {
+                                BeginnerPage(meditations: beginnerMeditations)
+                            }
+                            else if selectedPage == 2 {
+                                IntermediatePage(meditations: intermediateMeditations)
+                            }
+                            else if selectedPage == 3 {
+                                AdvancedPage(meditations: advancedMeditations)
+                            }
+                        }
+                        Button(role: .cancel) {
+                            showingSheet.toggle()
+                        } label: {
+                            Image(systemName: "arrow.left")
+                                .font(.title)
+                                .foregroundStyle(.green)
+                                .padding()
+                        }
                     }
                 }
             }

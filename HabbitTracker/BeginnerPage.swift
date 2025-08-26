@@ -57,8 +57,26 @@ struct BeginnerPage: View {
                     Text(meditation.description)
                         .font(.headline)
                         .foregroundStyle(.secondary)
-                    
+                    Spacer()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(
+                                LinearGradient(
+                                    gradient: Gradient(colors: [
+                                        Color.green.opacity(0.9),
+                                        Color.green.opacity(0.6)
+                                    ]),
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .frame(height: 60)
+                        Text("Complete")
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.white)
+                    }
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 12)
             }
             .navigationTitle("Meditation")

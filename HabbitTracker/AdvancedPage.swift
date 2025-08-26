@@ -41,7 +41,7 @@ struct AdvancedPage: View {
     struct MeditationDetailView: View {
         let meditation: Meditation
         @State private var showingSecondSheet = false
-
+        
         var body: some View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 6) {
@@ -57,16 +57,34 @@ struct AdvancedPage: View {
                     Text(meditation.description)
                         .font(.headline)
                         .foregroundStyle(.secondary)
-                    
+                    Spacer()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(
+                                LinearGradient(
+                                    gradient: Gradient(colors: [
+                                        Color.green.opacity(0.9),
+                                        Color.green.opacity(0.6)
+                                    ]),
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .frame(height: 60)
+                        Text("Complete")
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.white)
+                    }
                 }
                 .padding(.horizontal, 12)
             }
             .navigationTitle("Meditation")
             .navigationBarTitleDisplayMode(.inline)
-                .padding()
-                }
-            }
+            .padding()
         }
+    }
+}
+        
     
     #Preview {
         let allMeditations: [String: Meditation] = Bundle.main.decode("meditation.json")
