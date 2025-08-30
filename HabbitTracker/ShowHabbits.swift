@@ -80,7 +80,7 @@ struct ShowHabbits: View {
                                 .foregroundStyle(.white)
                                 .font(.title)
                                 .fontWeight(.semibold)
-                                
+                            
                             
                             Text("Relax And Fresh Your Mind")
                                 .foregroundStyle(.white)
@@ -95,7 +95,9 @@ struct ShowHabbits: View {
                 }
             }
             .padding(.horizontal)
-            .sheet(isPresented: $showingSheet) {
+            .sheet(isPresented: $showingSheet, onDismiss: {
+                    selectedPage = nil
+        }) {
                 ZStack(alignment: .topLeading) {
                     Color(.systemBackground)
                         .ignoresSafeArea()

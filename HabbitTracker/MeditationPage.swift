@@ -151,7 +151,9 @@ struct MeditationPage: View {
                     }
                     .padding()
                 }
-                .sheet(isPresented: $showingSheet) {
+                .sheet(isPresented: $showingSheet, onDismiss:  {
+                    selectedPage = nil
+                }) {
                     ZStack(alignment: .topLeading) {
                         Color(.systemBackground)
                             .ignoresSafeArea()

@@ -41,6 +41,12 @@ struct AdvancedPage: View {
     struct MeditationDetailView: View {
         let meditation: Meditation
         @State private var showingSecondSheet = false
+        @AppStorage("isComplete") var isComplete: Bool = false
+        
+        init(meditation: Meditation) {
+            self.meditation = meditation
+            self._isComplete = AppStorage(wrappedValue: false, "isComplete_step_\(meditation.step)")
+        }
         
         var body: some View {
             ScrollView {
@@ -58,22 +64,28 @@ struct AdvancedPage: View {
                         .font(.headline)
                         .foregroundStyle(.secondary)
                     Spacer()
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(
-                                LinearGradient(
-                                    gradient: Gradient(colors: [
-                                        Color.green.opacity(0.9),
-                                        Color.green.opacity(0.6)
-                                    ]),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
+                    Button {
+                        isComplete.toggle()
+                    }
+                    label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: isComplete ? [
+                                            Color.green.opacity(0.9),
+                                            Color.green.opacity(0.6)
+                                        ] : [Color.red.opacity(0.9),
+                                             Color.red.opacity(0.6)]),
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
                                 )
-                            )
-                            .frame(height: 60)
-                        Text("Complete")
-                            .fontWeight(.semibold)
-                            .foregroundStyle(.white)
+                                .frame(height: 60)
+                            Text(isComplete ? "Complete" : "Uncomplete")
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.white)
+                        }
                     }
                 }
                 .padding(.horizontal, 12)
@@ -93,5 +105,5 @@ struct AdvancedPage: View {
             allMeditations["\(step)"]
         }
         
-        return IntermediatePage(meditations: advancedMeditations)
+        return AdvancedPage(meditations: advancedMeditations)
     }
